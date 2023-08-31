@@ -1,0 +1,112 @@
+@{
+    ViewBag.Title = "Assignment 2";
+    Layout = "_Layout";
+}
+
+<div class="title">
+    <h1>Calculator</h1>
+</div>
+
+<!-- Calculator layout: -->
+
+<div id="container_calc" class="calc">
+    <div class="row">
+        <!-- Result display row -->
+        <div id="display" class="col-sm-6 offset-sm-3">
+            
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-sm-2 offset-sm-2">
+                    <button id="parenthesis_open" data-value="(" class="btn-operation"> ( </button>
+                </div>
+                
+                <div class="col-sm-2">
+                    <button id="parenthesis_close" data-value=")" class="btn-operation"> ) </button>
+                </div>
+                
+                <div class="col-sm-2">
+                    <button id="reset" class="btn-operation"> C </button>
+                </div>
+                
+                <div class="col-sm-2">
+                    <button id="clear" class="btn-operation"> CE </button>
+                </div>
+    </div>
+    
+    <div class="row">
+        <!-- 7 -> 9 -->
+        <div class="col-sm-2 offset-sm-2">
+            <button id="seven" class="btn-calc"> 7 </button>
+        </div>
+        
+        <div class="col-sm-2">
+            <button id="eight" class="btn-calc"> 8 </button>
+        </div>
+        
+        
+        <div class="col-sm-2">
+            <button id="nine" data-number="9" class="btn-calc"> 9 </button>
+        </div>
+        
+        <div class="col-sm-2">
+            <button id="divide" data-value="/" class="btn-operation"> ÷ </button>
+        </div>
+    </div>
+    
+    <div class="row">
+        <!-- 4 -> 6 -->  
+        
+        <div class="col-sm-2 offset-sm-2">
+            <button id="four" class="btn-calc"> 4 </button>
+        </div>
+        
+        <div class="col-sm-2">
+            <button id="five" class="btn-calc"> 5 </button>
+        </div>
+        
+        <div class="col-sm-2">
+            <button id="six" class="btn-calc"> 6 </button>
+        </div>
+        
+        <div class="col-sm-2">
+            <button id="multiply" data-value="*" class="btn-operation"> × </button>
+        </div>
+    </div>
+    
+    <div class="row">
+        <!-- 1 -> 3 --> 
+        
+        <div class="col-sm-2 offset-sm-2">
+            <button id="one" class="btn-calc"> 1 </button>
+        </div>
+                
+        <div class="col-sm-2">
+            <button id="two" class="btn-calc"> 2 </button>
+        </div>
+        
+        <div class="col-sm-2">
+            <button id="three" class="btn-calc"> 3 </button>
+        </div>
+        
+        <div class="col-sm-2">
+            <button id="minus" data-value="-" class="btn-operation"> - </button>
+        </div>
+    </div>
+    
+    <div class="row">
+        <!-- 0 og = -->  
+        <div class="col-sm-4 offset-sm-2">
+            <button id="zero" class="btn-calc"> 0 </button>
+        </div>
+                        
+        <div class="col-sm-2">
+            <button id="equals" class="btn-equals" onclick="calculate(calc_display.innerText)"> = </button>
+        </div>
+                
+        <div class="col-sm-2">
+            <button id="plus" data-value="+" class="btn-operation"> + </button>
+        </div>
+    </div>
+</div>

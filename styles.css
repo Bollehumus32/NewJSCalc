@@ -1,0 +1,41 @@
+#display {
+    background-color: #61b4ff;
+    text-align: center;
+    line-height: 75px;
+    height: 75px;
+    border-radius: 20px;
+    margin-bottom: 40px;
+    overflow: scroll;
+}
+
+.title
+{
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.col-sm-2.offset-sm-2
+{
+    text-align: center;
+}
+
+.btn-calc,
+    .btn-operation,
+    .btn-equals
+{
+    justify-content: center;
+    margin: 10px;
+    width: 10vw;
+    border: none;
+    height: 50px;
+    border-radius: 10px;
+}
+
+#zero
+{
+    width: 335px;
+}
+
+.calc{
+    justify-content: center;
+}
